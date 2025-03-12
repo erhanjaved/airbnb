@@ -77,19 +77,7 @@ accidents.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -243,12 +231,6 @@ accidents.head()
 <p>5 rows × 30 columns</p>
 </div>
 
-
-
-
-```python
-print(f"The dataset has {accidents.shape[0]} rows and {accidents.shape[1]} columns.")
-```
 
     The dataset has 132000 rows and 30 columns.
     
