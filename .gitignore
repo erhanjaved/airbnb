@@ -614,6 +614,11 @@ FodyWeavers.xsd
 .idea/
 *.sln.iml
 
+# Ignore Altair generated JSON files
+analysis/Erhan/altairdata/
+analysis/Erhan/altairdata/*.json
+analysis/Erhan/altairdata/*.json.gz
+
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
