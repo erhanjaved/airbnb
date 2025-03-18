@@ -8,7 +8,7 @@ def prepare_dataset(df: pd.DataFrame)-> pd.DataFrame:
     
     clean_and_convert_to_int_columns = ['service fee', 'price']    
 
-    df = rename_values(df, rename_map)
+    # df = rename_values(df, rename_map)
     
     df = clean_float_fields(df, clean_and_convert_to_int_columns)
     
