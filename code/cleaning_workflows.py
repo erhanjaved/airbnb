@@ -72,5 +72,10 @@ def prepare_dataset(df):
 
     # Strip leading/trailing spaces from string columns
     df_cleaned = df_cleaned.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
+
+    # Convert 't' and 'f' values to boolean (True/False) for binary columns
+    binary_columns = ['instant_bookable', 'host_is_superhost', 'host_has_profile_pic', 'host_identity_verified', 'has_availability']
+    for col in binary_columns:
+        df_cleaned[col] = df_cleaned[col].map({'t': True, 'f': False})
     
     return df_cleaned
