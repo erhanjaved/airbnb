@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 
 def prepare_dataset(df: pd.DataFrame)-> pd.DataFrame:
-    rename_map = {'neighbourhood group':{
-        'brookln': 'Brooklyn',
-        'manhatan': 'Manhattan'}}
+    # rename_map = {'neighbourhood group':{
+    #     'brookln': 'Brooklyn',
+    #     'manhatan': 'Manhattan'}}
     
     clean_and_convert_to_int_columns = ['service fee', 'price']    
 
