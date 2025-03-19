@@ -21,7 +21,7 @@ Our intended audience includes Airbnb hosts and short-term rental operators. By 
 ## Team Members
 
 - Erhan: I'm a 4th Year Mathematics & Data Science student at UBC Vancouver, and a pro tennis player on the side :D
-- Carol: one sentence about you!
+- Carol: I'm a 5th Year Commerce & Data Science student and I have been on exchange twice to Copenhagen and Shenzhen!
 - Aaron: one sentence about you!
 - Ayuho: one sentence about you!
 
