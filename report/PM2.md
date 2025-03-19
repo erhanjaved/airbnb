@@ -1099,10 +1099,25 @@ By leveraging these theoretical foundations, the selected visualizations ensure 
 #### What is the relationship between the different ratings and the price of listings for different room types?
 **Low-Fidelity Sketches** 
 <p align="center">
-    <img src="../images/prelim_sketches/Carol/Carol Q1 LF 1.JPG" width="500px">
+    <img src="../images/prelim_sketches/Carol/1.1.JPG" width="500px">
 </p>
-1. The heatmap quickly identifies which features correlate with higher guest satisfaction by using a colour gradient. This is particularly useful for spotting trends at a glance, as darker or more intense colours indicate stronger correlations. However, it aggregates data into bins, which can lead to a loss of detail about individual listings. Additionally, if too many features are included, the heatmap may become cluttered and difficult to interpret. 
+1. The heatmap shows which features correlate with higher guest satisfaction by using a colour gradient. This is useful for spotting trends quickly, as darker or more intense colours indicate stronger correlations. However, it aggregates data into bins, which can lead to a loss of detail about individual listings. If too many features are included, the heatmap can also be cluttered and difficult to interpret. 
 
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/1.2.JPG" width="500px">
+</p>
+2. The scatter plot shows how a single feature impacts guest satisfaction, while also adding a second feature through colour encoding. It is useful for detecting outliers and identifying trends. However, scatter plots can be overwhelming if there are too many data points, leading to overplotting. Additionally, it does not provide a holistic view of multiple features at once, as it only examines the relationship between two at a time. 
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/1.3.JPG" width="500px">
+</p>
+3. The boxplot is useful for visualizing the distribution of guest satisfaction ratings for different features. However, one of its main disadvantages is that it does not capture correlations between multiple features simultaneously. Additionally, the boxplot may be misleading if sample sizes for different features vary significantly.
+
+**Final Choice** 
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/1.4.JPG" width="500px">
+</p>
+The heatmap was chosen as the final visualization because it effectively conveys the relationship between multiple features and guest satisfaction ratings intuitively. By structuring the data in a grid format and using a colour gradient, users can recognize trends and patterns easily. High-impact features are easily distinguishable due to the contrast in colour saturation, drawing attention to the most relevant insights in the dataset. 
 
 ## 6. Next Steps
 
