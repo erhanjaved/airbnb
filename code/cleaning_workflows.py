@@ -1,8 +1,22 @@
 import pandas as pd
 import numpy as np
+import sys, os
 
-def prepare_dataset(df):
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Go up one level
+CSV_PATH = os.path.join(BASE_DIR, "data", "raw", "listings.csv")
+SAVE_DIR = os.path.join(BASE_DIR, "data", "processed")
+SAVE_PATH = os.path.join(SAVE_DIR, "processed_dataset.csv")
+
+def writeCsv(df:pd.DataFrame):
+
+
+    df.to_csv(SAVE_PATH, index=False)
+
+def prepare_dataset():
     # Make a copy of the dataset
+
+    df = pd.read_csv(CSV_PATH, parse_dates=['first_review', 'last_review', 'host_since'])
+    
     df_cleaned = df.copy()
 
     # Drop columns
@@ -79,3 +93,16 @@ def prepare_dataset(df):
         df_cleaned[col] = df_cleaned[col].map({'t': True, 'f': False})
     
     return df_cleaned
+
+
+def main():
+    df = prepare_dataset()
+    writeCsv(df)
+    return 0
+
+# This is true if the script is run by the interpreter, not imported by another
+# module.
+if __name__ == '__main__':
+    # main should return 0 for success, something else (usually 1) for error.
+    sys.exit(main())
+
