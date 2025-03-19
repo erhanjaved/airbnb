@@ -899,7 +899,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 ## 4. Task Analysis
 
-### Erhan's Analysis
+### Erhan
 
 #### 1. How does room type impact price variations?
 - **Retrieve Value**: Extract `room_type` and `price`.
@@ -952,7 +952,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 ---
 
-### Carol's Analysis
+### Carol
 
 #### 1. How do listing features like the number of amenities or instant booking availability impact guest satisfaction ratings?
 - **Compute Derived Value**: Count/calculate the number of amenities for each listing.
@@ -978,7 +978,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 ---
 
-### Aaron's Analysis
+### Aaron
 
 #### 1. What role does instant bookability serve as an incentive booster for less popular neighborhoods?
 - **Retrieve Value**: Extract `neighbourhood_cleansed`, `instant_bookable`, `number_of_reviews`, and `price`.
@@ -1004,7 +1004,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 ---
 
-### Ayuho's Analysis
+### Ayuho
 
 #### 1: How does host identity verification influence the success of a listing (in terms of reviews and ratings)?
 1. **Retrieve Value**: Extract `host_identity_verified`, `number_of_reviews`, `review_scores_rating`.
@@ -1096,27 +1096,30 @@ By leveraging these theoretical foundations, the selected visualizations ensure 
 
 ---
 ### Carol
-#### What is the relationship between the different ratings and the price of listings for different room types?
-**Low-Fidelity Sketches** 
+#### Q1) What is the relationship between the different ratings and the price of listings for different room types?
 <p align="center">
     <img src="../images/prelim_sketches/Carol/1.1.jpg" width="500px">
 </p>
-1. The heatmap shows which features correlate with higher guest satisfaction by using a colour gradient. This is useful for spotting trends quickly, as darker or more intense colours indicate stronger correlations. However, it aggregates data into bins, which can lead to a loss of detail about individual listings. If too many features are included, the heatmap can also be cluttered and difficult to interpret. 
+
+Option 1. The heatmap shows which features correlate with higher guest satisfaction by using a colour gradient. This is useful for spotting trends quickly, as darker or more intense colours indicate stronger correlations. However, it aggregates data into bins, which can lead to a loss of detail about individual listings. If too many features are included, the heatmap can be cluttered and difficult to interpret. 
+
 
 <p align="center">
     <img src="../images/prelim_sketches/Carol/1.2.jpg" width="500px">
 </p>
-2. The scatter plot shows how a single feature impacts guest satisfaction, while also adding a second feature through colour encoding. It is useful for detecting outliers and identifying trends. However, scatter plots can be overwhelming if there are too many data points, leading to overplotting. Additionally, it does not provide a holistic view of multiple features at once, as it only examines the relationship between two at a time. 
+
+Option 2. The scatter plot shows how a single feature impacts guest satisfaction, while also adding a second feature through colour encoding. It is useful for detecting outliers and identifying trends. However, scatter plots can be overwhelming if there are too many data points, leading to overplotting. Additionally, it does not provide a holistic view of multiple features at once, as it only examines the relationship between two at a time. 
 
 <p align="center">
     <img src="../images/prelim_sketches/Carol/1.3.jpg" width="500px">
 </p>
-3. The boxplot is useful for visualizing the distribution of guest satisfaction ratings for different features. However, one of its main disadvantages is that it does not capture correlations between multiple features simultaneously. Additionally, the boxplot may be misleading if sample sizes for different features vary significantly.
 
-**Final Choice** 
+Option 3. The boxplot is useful for visualizing the distribution of guest satisfaction ratings for different features. However, one of its main disadvantages is that it does not capture correlations between multiple features simultaneously. Additionally, the boxplot may be misleading if sample sizes for different features vary significantly.
+
 <p align="center">
     <img src="../images/prelim_sketches/Carol/1.4.jpg" width="500px">
 </p>
+
 The heatmap was chosen as the final visualization because it effectively conveys the relationship between multiple features and guest satisfaction ratings intuitively. By structuring the data in a grid format and using a colour gradient, users can recognize trends and patterns easily. High-impact features are easily distinguishable due to the contrast in colour saturation, drawing attention to the most relevant insights in the dataset. 
 
 ## 6. Next Steps
