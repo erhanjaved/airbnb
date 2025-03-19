@@ -1122,6 +1122,34 @@ By leveraging these theoretical foundations, the selected visualizations ensure 
 
 The heatmap was chosen as the final visualization because it effectively conveys the relationship between multiple features and guest satisfaction ratings intuitively. By structuring the data in a grid format and using a colour gradient, users can recognize trends and patterns easily. High-impact features are easily distinguishable due to the contrast in colour saturation, drawing attention to the most relevant insights in the dataset. 
 
+#### Q2) What is the relationship between the different ratings and the price of listings for different room types?
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/2.1.jpg" width="500px">
+</p>
+
+**Option 1.** The scatter plot is useful for identifying trends and outliers, such as whether higher-rated listings tend to be more expensive or if certain room types consistently receive better ratings. An interactive tool also allows users to explore different rating categories such as accuracy, communication, and value. However, a risk is potential overplotting, which may obscure patterns.
+
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/2.2.jpg" width="500px">
+</p>
+
+**Option 2.** The bar chart segments the ratings into ranges allowing for easy identification of price trends within each room type. However, this can also miss finer details, such as small differences in price between similar ratings. Additionally, the visual can become cluttered if too many room types or rating categories are included, making it harder to interpret the data. 
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/2.3.jpg" width="500px">
+</p>
+
+**Option 3.** The heatmap allows for quick identification of trends, with darker colours indicating higher prices. However, it may become difficult to interpret if there are too many rating categories or room types, leading to visual clutter. Additionally, the heatmap does not capture the underlying distribution of prices within each category.
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/2.4.jpg" width="500px">
+</p>
+
+The scatter plot is the best choice because it is an effective visualization for two continuous variables (price and ratings). The colour distinction for room types helps differentiate categories without overwhelming the viewer, allowing for quick comparisons. Additionally, the interactivity (e.g., dropdown for different rating categories) enhances user control, allowing them to customize the analysis and dive deeper into specific details when needed.
+
+
+
 ## 6. Next Steps
 
 To ensure a structured approach, we have outlined a detailed plan with clear responsibilities and a timeline. Each member will focus on their assigned research questions and data tasks while collaborating on key insights and visualizations.
