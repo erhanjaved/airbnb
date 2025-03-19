@@ -1,22 +1,8 @@
 import pandas as pd
 import numpy as np
-import sys, os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Go up one level
-CSV_PATH = os.path.join(BASE_DIR, "data", "raw", "listings.csv")
-SAVE_DIR = os.path.join(BASE_DIR, "data", "processed")
-SAVE_PATH = os.path.join(SAVE_DIR, "processed_dataset.csv")
-
-def writeCsv(df:pd.DataFrame):
-
-
-    df.to_csv(SAVE_PATH, index=False)
-
-def prepare_dataset():
+def prepare_dataset(df:pd.DataFrame):
     # Make a copy of the dataset
-
-    df = pd.read_csv(CSV_PATH, parse_dates=['first_review', 'last_review', 'host_since'])
-    
     df_cleaned = df.copy()
 
     # Drop columns
@@ -93,13 +79,3 @@ def prepare_dataset():
         df_cleaned[col] = df_cleaned[col].map({'t': True, 'f': False})
     
     return df_cleaned
-
-
-def main():
-    df = prepare_dataset()
-    writeCsv(df)
-    return 0
-
-if __name__ == '__main__':
-    sys.exit(main())
-
