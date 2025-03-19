@@ -886,8 +886,8 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 ### Aaron: Location & Listing Features, Host Decision-Making, and Booking Preferences
 
 1. What role does instant bookability serve as an incentive booster for less popular neighborhoods?
-2. Is there a difference in host behaviour by location?
-3. Is it easier to be a Superhost in certain locations?
+2. Is there a difference in host behavior (host identity verified, calculated host listings count) by location?
+3. Is it 'easier' to be a superhost compared to typical hosts in terms of host behavior and pricing in certain locations?
 
 ---
 
@@ -988,14 +988,14 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 - **Analyze**: Compare booking rates by `instant_bookable` status.
 - **Visualize**: Display different groups.
 
-#### 2. Is there a difference in host behaviour by location?
+#### 2. Is there a difference in host behavior (host identity verified, calculated host listings count) by location?
 - **Retrieve Value**: Extract `host_identity_verified`, `calculated_host_listings_count`, `neighbourhood_cleansed`, `neighbourhood_group_cleansed`.
 - **Group**: By `neighbourhood_group_cleansed`.
 - **Aggregate**: Compute averages for `calculated_host_listings_count` and counts for `host_identity_verified`.
 - **Analyze**: Compare differences across neighbourhoods.
 - **Visualize**: Display neighbourhood-based host behaviours.
 
-#### 3. Is it easier to be a Superhost in certain locations?
+#### 3. Is it 'easier' to be a superhost compared to typical hosts in terms of host behavior and pricing in certain locations?
 - **Retrieve Value**: Extract `host_is_superhost`, `neighbourhood_group_cleansed`, `calculated_host_listings_count`, `host_identity_verified`, `host_has_profile_pic`, `host_response_time`, `host_response_rate`, and `price`.
 - **Group**: By `host_is_superhost` and `neighbourhood_group_cleansed`.
 - **Aggregate**: Compute averages for key metrics.
