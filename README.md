@@ -42,7 +42,7 @@ Our intended audience includes Airbnb hosts and short-term rental operators. By 
 
 ## References
 
-{Add your stuff here}
+Inside Airbnb. (2025, March 1). New York City listings dataset (listings.csv.gz). Retrieved from https://insideairbnb.com/get-the-data/.
 
 
 
