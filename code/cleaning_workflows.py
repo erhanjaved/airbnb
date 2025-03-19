@@ -100,9 +100,6 @@ def main():
     writeCsv(df)
     return 0
 
-# This is true if the script is run by the interpreter, not imported by another
-# module.
 if __name__ == '__main__':
-    # main should return 0 for success, something else (usually 1) for error.
     sys.exit(main())
 
