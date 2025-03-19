@@ -1176,6 +1176,88 @@ The Cleveland dot plot aligns well with effective visualization principles by mi
 ---
 ### Aaron 
 
+#### Q1) What role does instant-bookability serve as an incentive booster for less popular neighbourhoods?
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/1-1.jpg" width="500px">
+</p>
+
+**Option 1.** The boxplot shows the mean and quartile values for number of reviews per neighbourhood group. A downside of this is the outliers in the dataset, making quartile ranges hard to compare and evaluate.
+
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/1-2.jpg" width="500px">
+</p>
+
+**Option 2.** The heatmap may be a bit tough to determine exact values when it comes to number of reviews just through the encoding of color. With the low fidelity shading and use of opacity, comparisons would be hard to make when comparing number of reviews per neighbourhood and bookability status.
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/1-3.jpg" width="500px">
+</p>
+
+**Option 3.** The scatterplots with trendlines show the relationship of number of reviews and price, faceted by neighbourhood group. A critique of this would be the difficulty with making comparisons with faceted plots far away from each other like Manhattan and Queens.
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/1-HF.jpg" width="500px">
+</p>
+
+The heatmaps was chosen as the final visualization as the goal in highlight large difference and patterns is key. The inclusion of color and annotated scale of neighbourhood popularity is also helpful in guiding the viewer in being able to pinpoint select groups and areas to focus on.
+
+
+#### Q2) Is there a difference in host behavior (host identity verified, calculated host listings count) by location?
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/2-1.jpg" width="500px">
+</p>
+
+**Option 1.** A critique of this would be the lack of precision for stacked groups, while large differences can be made out, smaller differences would be harder to point out.
+
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/2-2.jpg" width="500px">
+</p>
+
+**Option 2.** A critique of this geomap of NYC, would be the clutter that would come with annotations and only relying on them for information indication. Other pieces of encoding would assist in the depiction of the data.
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/2-3.jpg" width="500px">
+</p>
+
+**Option 3.** The use of color as a encoding for numerical data may make it hard to make exact comparisons and be able to see subtle differences between faceted plots that are far away from each other.
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/2-HF.jpg" width="500px">
+</p>
+
+The geomap was chosen as it is an extremely effective representation of location. The annotations as popups to depict information with the addition of color to highlight and segment neighbourhood groups help organize the visualization to either make intra or inter neighbourhood group comparisons.
+
+
+#### Q3) Is it 'easier' to be a superhost compared to typical hosts in terms of host behavior and pricing in certain locations?
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/3-1.jpg" width="500px">
+</p>
+
+**Option 1.** Comparisons would be hard to make between faceted groups of neighbour group, while density may be a hard metric to instinctively compare.
+
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/3-2.jpg" width="500px">
+</p>
+
+**Option 2.** Same critique as the last faceted scatterplot, comparisons between far apart faceted plots will be hard to make, especially with the two line encoding for color.
+
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/3-3.jpg" width="500px">
+</p>
+
+**Option 3.** The repeated faceted heatmaps with different y axis’ may make things too cluttered for comparison and is too visually stimulating to be able to pinpoint specific comparisons.
+
+
+<p align="center">
+    <img src="../images/prelim_sketches/Aaron/3-HF.jpg" width="500px">
+</p>
+
+The heatmaps was chosen as the final visualization as the heatmap as it is effective is demonstrating large patterns. In addition, due to the inclusion of color to encode for host response rate, this will make differences more salient. 
+
 ---
 ### Ayuho 
 
