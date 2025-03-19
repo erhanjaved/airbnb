@@ -616,6 +616,8 @@ FodyWeavers.xsd
 
 # Ignore Altair generated JSON files
 analysis/Erhan/altairdata/
+analysis/Aaron/altairdata/
+
 #analysis/Erhan/altairdata/*.json
 #analysis/Erhan/altairdata/*.json.gz
 
