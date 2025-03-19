@@ -852,7 +852,7 @@ df_cleaned.describe(include=['object'])
 
 
 #### Erhan 
-Detailed EDA can be found in the directory: `analysis/Erhan/analysis.ipynb`. 
+Detailed EDA can be found in the directory: `analysis/Erhan/analysis1.ipynb`. 
 
 #### Carol
 Detailed EDA can be found in the directory: `analysis/Carol/analysis2.ipynb`. 
@@ -1260,6 +1260,55 @@ The heatmaps was chosen as the final visualization as the heatmap as it is effec
 
 ---
 ### Ayuho 
+#### Q1) How does host identity verification influence listing success (reviews and ratings)?
+
+<p align="center">
+    <img src="../images/prelim_sketches/Ayuho/Q1.png" width="500px">
+</p>
+
+- **1a - Normalized Stacked Bar Chart**: This sketch bins review scores and displays the normalized percentage for verified versus non-verified hosts. It effectively balances different data counts and allows users to focus on specific ranges via brushing. However, it may hide absolute values, so additional views might be necessary.
+- **1b - Box Plot + Violin Plot**: Combining a box plot with a violin plot shows both summary statistics and full distribution details for review scores or counts between verified and non-verified hosts. Interactive radio buttons and brushing allow users to switch between measures and focus on specific ranges. The challenge is to keep the display clear despite the extra information.
+- **1c - Normalized Heatmap**: This approach normalizes data within each group to adjust for imbalances and uses a colour scale to encode information. With a range slider and dropdown for filtering, it offers an interactive exploration of review distributions. Care must be taken to choose a clear colour scale so that differences are easily distinguishable.
+
+
+#### Q2) How do host responses differ between superhosts and non-superhosts?
+
+<p align="center">
+    <img src="../images/prelim_sketches/Ayuho/Q2.png" width="500px">
+</p>
+
+- **2a - Composite Interactive Dashboard**: This design uses an upper stacked bar chart (with host response time on the X-axis and normalized percentages, coloured by superhost status) combined with a lower box plot showing acceptance rate distributions. Brushing on the bar chart updates the box plot, effectively linking response time and acceptance rate. Its strength lies in integrating two key metrics, though it may be complex for new users.
+- **2b - Scatterplot Matrix**: A scatterplot matrix can display the relationship between response time and acceptance rate with additional encodings (such as size for number of reviews) and filtering by superhost status. This method provides a comprehensive view but might suffer from clutter if not carefully designed.
+- **2c - Heatmap**: A heatmap plots response time against acceptance rate, with cell colours representing listing success (reviews or ratings). Interactive dropdowns and sliders allow users to filter by superhost status and acceptance rate range. This approach is compact and effective if the colour scale is well-calibrated.
+  
+#### Q3) How do hosts with multiple listings strategically set pricing, and how does this impact guest satisfaction?
+<p align="center">
+    <img src="../images/prelim_sketches//Ayuho/Q3.png" width="500px">
+</p>
+
+- **3a - Bar Chart + Density Plot**: An enhanced bar chart bins the number of listings and shows the average price, with colour representing the average guest rating. A density plot below reveals the overall distribution of guest ratings. Interactive brushing links the two views, allowing users to explore how specific listing count ranges affect pricing and ratings. The design effectively uses position and colour, but the density must be carefully calibrated.
+- **3b - Box Plot + Scatterplot**: This option uses a box plot to summarize price distributions by listing count categories and a scatterplot to show the detailed relationship between price and guest ratings. Interactive elements, such as a range slider, help users filter data. It offers both summary and detailed views but may require transparency adjustments to prevent overplotting.
+- **3c - Heatmap**: A heatmap visualizes the relationship between binned listing counts and price ranges, with colour encoding the average guest rating. Interactive sliders allow users to adjust the range of guest ratings displayed. This compact view highlights overall trends and works well with large datasets if bin sizes and the colour scale are chosen appropriately.
+
+
+**Selected Sketches:**
+
+<p align="center">
+    <img src="../images/prelim_sketches/Ayuho/SelectedSketchesQ1-2.png" width="500px">
+</p>
+
+**Q1: Box Plot + Violin Plot (Option 1b)**
+The box plot displays key statistics such as the median and quartiles, while the violin plot smooths the data distribution to reveal its overall shape. This follows the expressiveness principle, as it represents ordered data (review scores) using spatial position and uses colour hue to separate categories (verified vs. non-verified hosts). This ensures that users can understand the differences without confusion. 
+
+**Q2: Composite Interactive Dashboard (Option 2a)**
+This design integrates two effective views into one dashboard. The upper chart uses spatial position for the ordered variable (response time) and colour hue to distinguish superhost status, making it easy to see the distribution differences. The lower boxplot uses spatial position and length to compare acceptance rate distributions. Interactive elements like brushing (selecting specific response times to update the boxplot) and dropdown filtering enhance exploration. This approach follows both the expressiveness and effectiveness principles by presenting clear, comparable information without clutter.
+
+<p align="center">
+    <img src="../images/prelim_sketches/Ayuho/SelectedSketchesQ3.png" width="500px">
+</p>
+
+**Q3: Bar Chart with Guest Rating Distribution (Option 3a)**
+This design follows the expressiveness principle by using spatial position and length to represent ordered data (number of listings and price). Colour (a magnitude channel) adds guest rating information while maintaining data clarity. The density plot provides a detailed view of guest rating distribution, helping users understand both high and low trends. Interactive brushing allows for bidirectional exploration, making it easier to analyze host pricing strategies and their impact on guest satisfaction.
 
 ## 6. Next Steps
 
