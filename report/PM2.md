@@ -1148,7 +1148,36 @@ The heatmap was chosen as the final visualization because it effectively conveys
 
 The scatter plot is the best choice because it is an effective visualization for two continuous variables (price and ratings). The colour distinction for room types helps differentiate categories without overwhelming the viewer, allowing for quick comparisons. Additionally, the interactivity (e.g., dropdown for different rating categories) enhances user control, allowing them to customize the analysis and dive deeper into specific details when needed.
 
+#### Q3) Which amenities are most frequently associated with higher guest ratings in Airbnb listings?
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/3.1.jpg" width="500px">
+</p>
 
+**Option 1.** The bar chart displays the correlation between amenities and guest ratings, allowing for quick identification of which ones have the strongest positive or negative impact. By sorting the bars from highest to lowest correlation, it makes comparisons straightforward. However, it does not show the frequency, meaning an amenity with a high correlation but very few listings might be misleading. If there are many amenities, the chart could also become cluttered. 
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/3.2.jpg" width="500px">
+</p>
+
+**Option 2.** The scatterplot displays the relationship between an amenity’s correlation with guest ratings and its frequency across listings. This allows for insights into whether commonly offered amenities tend to have stronger or weaker correlations with guest satisfaction. However, if many amenities cluster around similar correlation values, overplotting can occur and make it difficult to differentiate individual points. 
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/3.3.jpg" width="500px">
+</p>
+
+**Option 3.** The Cleveland dot plot plots amenities along the y-axis and correlation values along the x-axis, which allows for an easy comparison of how different amenities influence guest satisfaction. Since the dots are aligned to a common scale, this makes it simple to identify the most and least impactful amenities at a glance. However, this visualization lacks a visual encoding of frequency, which could provide additional context. 
+
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/3.4.jpg" width="500px">
+</p>
+
+The Cleveland dot plot aligns well with effective visualization principles by minimizing clutter, ensuring readability, and allowing for precise comparisons of correlations using positioning along a common scale. Compared to the scatterplot, it presents correlation values more intuitively without the risk of overplotting. However, since it lacks frequency encoding, a possible enhancement would be size encoding for frequency or an interactive tooltip to display additional context. This would preserve clarity while adding depth to the analysis.
+
+---
+### Aaron 
+
+---
+### Ayuho 
 
 ## 6. Next Steps
 
