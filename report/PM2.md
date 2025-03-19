@@ -852,7 +852,7 @@ df_cleaned.describe(include=['object'])
 
 
 #### Erhan 
-Detailed EDA can be found in the directory: `analysis/Erhan/analysis.ipynb`. 
+Detailed EDA can be found in the directory: `analysis/Erhan/analysis1.ipynb`. 
 
 #### Carol
 Detailed EDA can be found in the directory: `analysis/Carol/analysis2.ipynb`. 
