@@ -852,7 +852,7 @@ df_cleaned.describe(include=['object'])
       <td>Manhattan</td>
       <td>Entire rental unit</td>
       <td>Entire home/apt</td>
-      <td>["Wifi", "TV", "Smoke alarm", "Carbon monoxide...</td>
+      <td>["Wifi", "TV", "Smoke alarm", "Carbon monoxide...]</td>
     </tr>
     <tr>
       <th>freq</th>
