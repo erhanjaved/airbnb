@@ -1070,7 +1070,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 #### Q1) How does room type impact price variations?
 <p align="center">
-    <img src="../images/prelim_sketches/Erhan/Q1.jpg" width="300px">
+    <img src="../images/prelim_sketches/Erhan/Q1.JPG" width="500px">
 </p>
 
 - **1a - Boxplot**: Displays the distribution of prices for each room type, showing quartiles, median, and outliers. However, it may be difficult to interpret for those unfamiliar with box plots.
@@ -1080,7 +1080,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 #### Q2) What is the effect of location on price differences?
 <p align="center">
-    <img src="../images/prelim_sketches/Erhan/Q2.jpg" width="500px">
+    <img src="../images/prelim_sketches/Erhan/Q2.JPG" width="500px">
 </p>
 
 - **2a - Scatterplot**: Shows the distribution of listings according to latitude and longitude, with price encoded as color. Highlights spatial trends but may suffer from clutter.
@@ -1091,7 +1091,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 #### Q3) Does a host’s listing count or years of hosting influence price?
 <p align="center">
-    <img src="../images/prelim_sketches/Erhan/Q3.jpg" width="500px">
+    <img src="../images/prelim_sketches/Erhan/Q3.JPG" width="500px">
 </p>
 
 - **3a - Scatterplot**: Encodes years since hosting in point size. Displays all data points but may become cluttered.
@@ -1102,7 +1102,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 #### Q4) How do reviews per month, review scores, and total number of reviews affect pricing?
 <p align="center">
-    <img src="../images/prelim_sketches/Erhan/Q4.jpg" width="500px">
+    <img src="../images/prelim_sketches/Erhan/Q4.JPG" width="500px">
 </p>
 
 - **4a - Stacked Bar Chart**: Shows the proportion of different review scores and their relation to price.
@@ -1113,7 +1113,7 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 
 #### Q5) What role does listing availability and minimum nights play in pricing?
 <p align="center">
-    <img src="../images/prelim_sketches/Erhan/Q5.jpg" width="500px">
+    <img src="../images/prelim_sketches/Erhan/Q5.JPG" width="500px">
 </p>
 
 - **5a - Faceted Bar Charts**: Show grouped analysis for availability and minimum nights but may be fragmented.
