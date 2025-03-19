@@ -1094,6 +1094,15 @@ The visualizations selected for this project adhere to key theoretical principle
 
 By leveraging these theoretical foundations, the selected visualizations ensure **clarity, insightfulness, and effective communication** of Airbnb market dynamics in **New York City**.
 
+---
+### Carol
+#### What is the relationship between the different ratings and the price of listings for different room types?
+**Low-Fidelity Sketches** 
+<p align="center">
+    <img src="../images/prelim_sketches/Carol/Carol Q1 LF 1.JPG" width="500px">
+</p>
+1. The heatmap quickly identifies which features correlate with higher guest satisfaction by using a colour gradient. This is particularly useful for spotting trends at a glance, as darker or more intense colours indicate stronger correlations. However, it aggregates data into bins, which can lead to a loss of detail about individual listings. Additionally, if too many features are included, the heatmap may become cluttered and difficult to interpret. 
+
 
 ## 6. Next Steps
 
