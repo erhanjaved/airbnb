@@ -1065,6 +1065,72 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 5. **Correlate**: Analyze pricing influence.
 6. **Find Extremum**: Identify extremes.
 
+## 5. Preliminary Sketches
+### Erhan
+
+#### Q1) How does room type impact price variations?
+<p align="center">
+    <img src="../images/prelim_sketches/Erhan/Q1.jpg" width="300px">
+</p>
+
+- **1a - Boxplot**: Displays the distribution of prices for each room type, showing quartiles, median, and outliers. However, it may be difficult to interpret for those unfamiliar with box plots.
+- **1b - Bar Chart**: Displays the average price for each room type, making it simple and easy to interpret. However, it does not show price variability.
+- **1c - Violin Plot**: Provides a detailed distribution while maintaining clarity. Less common, may require additional explanation.
+- **High Fidelity Choice**: **1a (Boxplot)** as it effectively captures price distribution.
+
+#### Q2) What is the effect of location on price differences?
+<p align="center">
+    <img src="../images/prelim_sketches/Erhan/Q2.jpg" width="500px">
+</p>
+
+- **2a - Scatterplot**: Shows the distribution of listings according to latitude and longitude, with price encoded as color. Highlights spatial trends but may suffer from clutter.
+- **2b - Choropleth Map**: Expands on 2a by encoding neighborhood groups for better contextual understanding.
+- **2c - Stacked Histogram**: Describes the distribution of price across different neighborhoods but lacks geographical context.
+- **High Fidelity Choice**: **2b (Choropleth Map)** for clear regional price differences.
+
+
+#### Q3) Does a host’s listing count or years of hosting influence price?
+<p align="center">
+    <img src="../images/prelim_sketches/Erhan/Q3.jpg" width="500px">
+</p>
+
+- **3a - Scatterplot**: Encodes years since hosting in point size. Displays all data points but may become cluttered.
+- **3b - Line Chart**: Shows price trends over years of hosting. Highlights temporal trends but may oversimplify relationships.
+- **3c - Heatmap**: Combines number of host listings and years of hosting, encoding price in color. Offers clear comparative insights.
+- **High Fidelity Choice**: **3c (Heatmap)** to analyze the combined effect of host experience and listing count.
+
+
+#### Q4) How do reviews per month, review scores, and total number of reviews affect pricing?
+<p align="center">
+    <img src="../images/prelim_sketches/Erhan/Q4.jpg" width="500px">
+</p>
+
+- **4a - Stacked Bar Chart**: Shows the proportion of different review scores and their relation to price.
+- **4b - Heatmap**: Captures relationships between multiple review attributes and price.
+- **4c - Scatterplot**: Displays individual review-price relationships but may be scattered.
+- **High Fidelity Choice**: **4b (Heatmap)** for better multidimensional insights.
+
+
+#### Q5) What role does listing availability and minimum nights play in pricing?
+<p align="center">
+    <img src="../images/prelim_sketches/Erhan/Q5.jpg" width="500px">
+</p>
+
+- **5a - Faceted Bar Charts**: Show grouped analysis for availability and minimum nights but may be fragmented.
+- **5b - Dual Axis Bar and Line Chart**: Displays both trends but may obscure their combined effects.
+- **5c - Grouped Violin Plots**: Captures combined effects in detail.
+- **High Fidelity Choice**: **5c (Grouped Violin Plots)** to analyze complex interactions.
+
+The visualizations selected for this project adhere to key theoretical principles in data visualization and analytics:
+
+- **Boxplot for Room Type Pricing**: Follows **Tukey’s exploratory data analysis principles**, providing a robust summary of data distribution, including median, quartiles, and outliers.
+- **Choropleth Map for Location-based Pricing Differences**: Aligns with **spatial analysis principles**, offering an intuitive way to identify regional price trends while reducing clutter compared to scatterplots.
+- **Heatmap for Host Experience and Review Attributes**: Follows **Gestalt principles of perception**, particularly proximity and similarity, enabling viewers to easily detect patterns in pricing variations. Heatmaps also emphasize **color encoding theory**, effectively representing continuous variables like price.
+- **Grouped Violin Plots for Availability and Minimum Nights**: Employ **density estimation techniques**, allowing for clear comparisons across multiple variables while maintaining interpretability.
+
+By leveraging these theoretical foundations, the selected visualizations ensure **clarity, insightfulness, and effective communication** of Airbnb market dynamics in **New York City**.
+
+
 ## 6. Next Steps
 
 To ensure a structured approach, we have outlined a detailed plan with clear responsibilities and a timeline. Each member will focus on their assigned research questions and data tasks while collaborating on key insights and visualizations.
