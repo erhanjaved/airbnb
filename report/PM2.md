@@ -1042,6 +1042,28 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 - **1c - Violin Plot**: Provides a detailed distribution while maintaining clarity. Less common, may require additional explanation.
 - **High Fidelity Choice**: **1a (Boxplot)** as it effectively captures price distribution.
 
+Possible interaction features:
+* Price Slider – Enables Targeted Exploration
+    * Filters listings by user-defined budget range.
+    * Helps reveal how different room types are priced across the affordability spectrum.
+* Neighborhood Dropdown – Offers Regional Focus
+    * Filters listings by borough (e.g., Manhattan vs. Brooklyn).
+    * Useful for comparing room type pricing across different geographic areas.
+* "All" Option – Adds Analytical Flexibility
+    * Lets users toggle between borough-specific and full-city analysis.
+    * Makes it easy to contrast local pricing trends with the overall market.
+* Interactive Legend – Enables Room Type Selection
+    * Users can click a legend item to highlight one room type and grey out others.
+    * Selection dynamically updates the price distribution histogram.
+    * Promotes clear, focused comparison of room type behavior.
+* Linked Histogram – Reveals Distribution Patterns
+    * Updates automatically with legend, price slider, and neighborhood filter.
+    * Shows how frequently listings of the selected room type occur at different price points.
+    * Offers deeper insight beyond boxplot summary stats.
+* Compact Horizontal Layout – Improves Comparability
+    * Boxplot, legend, and histogram appear side-by-side.
+    * Supports quick visual scanning between categories and data distributions.
+
 #### Q2) What is the effect of location on price differences?
 <p align="center">
     <img src="../images/prelim_sketches/Erhan/Q2.JPG" width="500px">
@@ -1051,6 +1073,19 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 - **2b - Choropleth Map**: Expands on 2a by encoding neighborhood groups for better contextual understanding.
 - **2c - Stacked Histogram**: Describes the distribution of price across different neighborhoods but lacks geographical context.
 - **High Fidelity Choice**: **2b (Choropleth Map)** for clear regional price differences.
+
+Possible interaction features:
+* Price Slider
+    * Filters both the map and bar chart to show listings under a selected price.
+* Dropdown / Click Selection
+    * Clicking a borough highlights it across both views.
+    * Greys out other regions to focus attention.
+* Bi-directional Linking
+    * Selecting a borough in either the map or bar chart updates the other.
+    * Encourages spatial and statistical comparison.
+* Tooltips
+    * Show detailed info (price, room type, neighborhood) on hover.
+    * Helps users explore without visual clutter.
 
 
 #### Q3) Does a host’s listing count or years of hosting influence price?
@@ -1063,6 +1098,15 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 - **3c - Heatmap**: Combines number of host listings and years of hosting, encoding price in color. Offers clear comparative insights.
 - **High Fidelity Choice**: **3c (Heatmap)** to analyze the combined effect of host experience and listing count.
 
+Possible interaction features:
+* Max Price Slider
+    * Excludes high-price outliers for a cleaner analysis.
+* Max Listings Slider
+    * Lets users focus on small-scale vs. commercial hosts.
+* Aggregation Radio Buttons
+    * Switch between mean, median, and max pricing to compare price trends.
+    * Useful for identifying whether certain host behaviors lead to extreme pricing.
+
 
 #### Q4) How do reviews per month, review scores, and total number of reviews affect pricing?
 <p align="center">
@@ -1074,6 +1118,19 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 - **4c - Scatterplot**: Displays individual review-price relationships but may be scattered.
 - **High Fidelity Choice**: **4b (Heatmap)** for better multidimensional insights.
 
+Possible interaction features:
+* Price Slider
+    * Filters outliers and highlights common pricing tiers.
+* Review Count Slider
+    * Focuses analysis on listings with sufficient review volume.
+* Zoom & Pan on X-Axis
+    * Enables deeper exploration of review frequency (e.g., frequent vs. occasional reviews).
+* Tooltips
+    * Show exact values per bin (reviews/month, score, price).
+* Why It Helps:
+    * Makes it easy to correlate guest activity and satisfaction with price.
+    * Enables discovery of patterns like higher prices for highly-rated, frequently-reviewed listings.
+
 
 #### Q5) What role does listing availability and minimum nights play in pricing?
 <p align="center">
@@ -1084,6 +1141,20 @@ Detailed EDA can be found in the directory: `analysis/Ayuho/analysis4.ipynb`.
 - **5b - Dual Axis Bar and Line Chart**: Displays both trends but may obscure their combined effects.
 - **5c - Grouped Violin Plots**: Captures combined effects in detail.
 - **High Fidelity Choice**: **5c (Grouped Violin Plots)** to analyze complex interactions.
+
+Possible interaction features:
+* Price Slider
+    * Focuses analysis on affordable or target-range listings.
+* Room Type Dropdown (with "All")
+    * Compares trends across private rooms, entire homes, etc.
+* Violin Plots (mark_area)
+    * Shows full price distribution for each minimum night range — not just averages.
+* Custom Bin Ordering
+    * Makes the x-axis intuitive (0–7, 8–30, 31–60, etc.) for better storytelling.
+* Why It Helps:
+    * Reveals whether longer minimum stays or year-round availability correlate with higher prices.
+    * Helps identify skewed or wide-ranging distributions across different room types.
+
 
 The visualizations selected for this project adhere to key theoretical principles in data visualization and analytics:
 
