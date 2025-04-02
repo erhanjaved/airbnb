@@ -119,7 +119,7 @@ The violin plots communicate pricing spread and shape effectively, particularly 
 
 #### **1. How do listing features like the number of amenities or instant booking availability impact guest satisfaction ratings?**
 
-![Demo 1](../images/prelim_sketches/Carol/Carol_Vis 1.gif)
+![Demo 1](../images/prelim_sketches/Carol/heatmap.gif)
 
 **Design Goal:**  
 This visualization helps explore how different listing features, like the number of amenities or instant booking, relate to guest satisfaction. It lets users see overall trends and dive deeper into specific features to understand their impact on different rating levels.
