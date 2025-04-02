@@ -182,3 +182,68 @@ A radio button lets users switch between all listings and highly-rated listings.
 
 **Critique the view:**  
 The visualization effectively highlights which amenities are associated with better guest ratings. However, since correlation does not imply causation, some amenities may appear important even if they don’t directly influence guest satisfaction. Additional analysis could help clarify whether these relationships are meaningful.
+
+### Aaron: Location
+
+#### **1. What role does instant-bookability serve as an incentive booster for less popular neighbourhoods?**
+
+![Demo 1](../images/prelim_sketches/Aaron/chart1.gif)
+
+**Design Goal:**
+This visualization is meant to compare the impacts of the instant bookability feature in AirBnBs in the most popular neighbourhood groups and corresponding neighbourhoods. The visualization accomplishes this by providing a heatmap with binary representation instant bookability against neighbourhood groups with a color hue encoding for number of reviews to reflect popularity.
+
+**Marks:**
+Rect, Bar
+
+**Channels:**
+Color, Y-position, X-positioning, Color Hue
+
+**Characteristics of Channels that were exploited:**
+The color represented Neighbourhood groups, while the gradient hue for the heatmap represented the continuous number of reviews. Y positioning was used to reflect the number of reviews per top 10 neighbourhood per neighbourhood group. While both X and Y positioning were used to reflect distinct interactions between number of reviews and instant bookability status on the heatmap.
+
+**Describe the interaction:**
+When a binned number of reviews is selected, all categories of that bin will be highlighted in the heatmap. Additionally, depending on the dropdown neighbourhood selected, the heatmap and bar chart will be filtered to reflect neighbourhoods according to that neighbourhood. The highlighted categories of a particular binned number of reviews promotes comparability and distinction between groups and their number of reviews.
+
+**Critique the view:**
+The heatmap and bar chart effectively communicate the intricacies on a higher and lower level for the number of reviews per neighbourhood group and its corresponding neighbourhoods. The added use of the heatmap y axis categories help define clear distinctions and impact of an AirBnB's instant bookability rate. However, outliers in number of reviews may skew color gradients leading to a inbalance of color hues, decreasing ability of effective comparisons.
+
+#### **2. Is there a difference in host behavior (host identity verified, calculated host listings count) by location?**
+
+![Demo 2](../images/prelim_sketches/Aaron/chart2.gif)
+
+**Design Goal:**
+This visualization is supposed to give an interactive experience to observe top neighbourhood host information through tooltips and highlights on the New York landscape. This visualization accomplishes this by giving users a direct way to investigate popular neighbourhoods by the bar chart on the right, clicking on neighbourhood groups and being able to investigate data points and host tooltips on the geomap to the left.
+
+**Marks:**
+Bar, circle
+
+**Channels:**
+Color, Y-position, X-positioning
+
+Characteristics of Channels that were exploited:
+The color represented Neighbourhood groups, reflecting by the blue hue on each concatenated visualization. XY positioning on the geomap was used to reflect longitude and latitude, while Y positioning was used on the bar chart to reflect the Total number of review. 
+
+**Describe the interaction:**
+There is a bidirectional interaction that highlights all bins or circles on either graph, representing the neighbourhood group associated with either value. The goal of this interaction is to allow the viewer to trace from popular neighbourhoods and quickly observe and be highlighted information pertaining to that group on the map where additional information can be found through tooltip interactions.
+
+**Critique the view:**
+The geomap and bar chart do a great job providing a high level overview. In addition, the linkage through interaction and proximity allows for thorough exploration and comparison. However, the geomap's tooltips as a means of juxtaposing host behavior is too focused and specific to points. As a result, the high density of points on certain parts of the map make conclusions and observations very hard to develop.
+
+#### **3. Is it 'easier' to be a superhost compared to typical hosts in terms of host behavior and pricing in certain locations?**
+
+![Demo 3](../images/prelim_sketches/Aaron/chart3.gif)
+
+**Marks:**
+Rect
+
+**Channels:**
+Y-position, X-position, Color Hue
+
+**Characteristics of Channels that were exploited:**
+The color hue for the heatmap represented the continuous number of superhosts in each neighbourhood group's neighbourhoods. X positioning was used to reflect the categorical neighbourhoods of each faceted neighbourhood group, while Y positioning expressed the binary host characteristics of whether they were verified or had a profile picture.
+
+**Describe the interaction:**
+The interaction actively filters by neighbourhood group for more effective comparisons and juxtaposition between the two host characteristics, profile picture presence and identity verification
+
+**Critique the view:**
+The faceted juxtaposed heatmaps allow for clear comparisons between neighbourhood groups when it comes to different factors of host_identity_verification and host_has_profile_pic. In addition, the added dropdown filter for neighbourhoods allow for even clearer analysis and comparisons. However, the lengthy faceted graphs may allow for too much visual clutter and ineffective comparison in part due to the missing data in that is not colored. Perhaps placing neighbourhood groups with different y-axis features side by side would be more effective. Moreover, the color gradient reflects a continuous numerical feature, which may not allow for exact comparisons.
