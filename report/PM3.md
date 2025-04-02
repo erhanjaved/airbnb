@@ -114,3 +114,28 @@ A price slider filters out high-end listings to narrow the focus. A room type dr
 
 **Critique the view:**  
 The violin plots communicate pricing spread and shape effectively, particularly for identifying skew and variance. The layout supports comparison within and across room types. However, violin plots using `mark_area` may be unfamiliar to some viewers. Including median markers or frequency annotations could improve interpretability.
+
+### Carol: Guest Experience & Satisfaction
+
+#### **1. How do listing features like the number of amenities or instant booking availability impact guest satisfaction ratings?**
+
+![Demo 1](../images/prelim_sketches/Carol/Carol_Vis 1.gif)
+
+**Design Goal:**  
+This visualization helps explore how different listing features, like the number of amenities or instant booking, relate to guest satisfaction. It lets users see overall trends and dive deeper into specific features to understand their impact on different rating levels.
+
+**Marks:**  
+Rectangles (Heatmap), Bars (Bar Chart)
+
+**Channels:**  
+X-Position (Feature), Y-Position (Rating Bin), Color Hue (Correlation Strength)
+
+**Characteristics of Channels that were exploited:**  
+Position is used to organize features and rating bins, making it easy to compare correlations across different categories. Colour encodes correlation strength using a red-blue scale, allowing users to quickly spot positive and negative relationships. Sorting the bars in descending order ensures the strongest correlations are immediately visible.
+
+**Describe the interaction:**  
+A dropdown menu lets users switch between different rating types (e.g., overall rating, cleanliness, value). Clicking on a feature in the heatmap highlights its correlation values in the bar chart, showing how the feature is associated with guest satisfaction across different rating bins.
+
+**Critique the view:**  
+The visualization effectively summarizes complex relationships in a compact and interactive format. The heatmap provides an overview of correlations, while the linked bar chart allows for a deeper exploration of specific features. However, since correlation does not imply causation, some relationships may be misleading. Adding tooltips or explanatory text could help users interpret the data more accurately.
+
