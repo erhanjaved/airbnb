@@ -247,3 +247,89 @@ The interaction actively filters by neighbourhood group for more effective compa
 
 **Critique the view:**
 The faceted juxtaposed heatmaps allow for clear comparisons between neighbourhood groups when it comes to different factors of host_identity_verification and host_has_profile_pic. In addition, the added dropdown filter for neighbourhoods allow for even clearer analysis and comparisons. However, the lengthy faceted graphs may allow for too much visual clutter and ineffective comparison in part due to the missing data in that is not colored. Perhaps placing neighbourhood groups with different y-axis features side by side would be more effective. Moreover, the color gradient reflects a continuous numerical feature, which may not allow for exact comparisons.
+
+### Ayuho: Host Behaviour & Market Competitiveness
+
+#### **1. How does host identity verification influence the success of a listing (in terms of reviews and ratings)?**
+
+![Demo 1](../images/prelim_sketches/Ayuho/Q1.gif)
+
+**Design Goal:**
+
+This visualization explores whether verified hosts (host_identity_verified=True) achieve greater success than non-verified hosts (False), as measured by guest ratings and the number of reviews. It allows users to examine if verification status is linked to higher guest feedback and ratings, and whether these patterns change when focusing on specific rating ranges.
+
+**Marks:**
+
+Lines and points (Box Plots), Area (Violin Density Plots)
+
+**Channels:**
+
+X-Position (Verification Status), Y-Position (Guest Ratings, Number of Reviews), Colour Hue (Verification Status), Opacity (Highlights data within selected rating ranges)
+
+**Characteristics of Channels that were exploited:**
+
+Position effectively compares guest ratings and review counts across verification status categories. Colour differentiates verified and non-verified hosts, which helps to quickly identify differences. Box plots clearly highlight quartiles and outliers, while violin plots display detailed distribution shapes.
+
+**Describe the interaction:**
+
+Two sliders (Min Guest Rating & Max Guest Rating) filter the bottom two plots (number of reviews) by guest rating, enabling users to explore specific subsets of listings. The top two plots (ratings distributions) remain static.
+
+**Critique the view:**
+
+The visualization effectively demonstrates differences between verified and non-verified hosts by combining box and violin plots to present both summary statistics and detailed distributions. Interactive filters increase flexibility by allowing users to focus on specific guest rating ranges for review counts, although only the review plots respond to the sliders. Clarifying that the rating plots remain static could further improve usability. Overall, the design successfully communicates key differences in guest ratings and review counts.
+
+#### **2. How do host responses (e.g. response time, acceptance rate) differ between superhosts and non-superhosts, and how does this impact listing success?**
+
+![Demo 2](../images/prelim_sketches/Ayuho/Q2.gif)
+
+**Design Goal:**
+
+This visualization investigates the differences in response behaviours between superhosts and non-superhosts, focusing on response time and acceptance rate. It also examines whether these behaviours influence listing success, as indicated by guest ratings.
+
+**Marks:**
+
+Bars (Normalized Stacked Bar Chart), Lines and Points (Box Plot)
+
+**Channels:**
+
+X-Position (Response Time Categories, Superhost Status), Y-Position (Proportion, Acceptance Rate), Colour Hue (Superhost Status), Opacity
+
+**Characteristics of Channels that were exploited:**
+
+Position shows differences in response behaviours and acceptance rates between superhosts and non-superhosts. Colour helps to distinguish between the two groups, while opacity highlights selected categories when filtered.
+
+**Describe the interaction:**
+
+Two guest rating sliders allow users to filter listings within a chosen rating range. The dropdown menu filters by response time category, affecting both the normalized stacked bar chart and the box plot. This interaction helps users analyze whether quick responses and high acceptance rates are linked to higher guest ratings.
+
+**Critique the view:**
+
+The visualization effectively follows the principles of expressiveness and effectiveness. Ordered data (response times and acceptance rates) is clearly represented on the vertical axes, while categorical data (superhost status) is shown on the horizontal axes with distinct colours. The interactive elements (sliders and dropdown) make it easy to explore how response behaviours and acceptance rates vary across different guest rating ranges. However, since the sliders only affect the bar chart, it may cause confusion. Adding a label to specify which chart the sliders influence would improve usability.
+
+#### **3. How do hosts with multiple listings strategically set their pricing, and how does this impact guest satisfaction?**
+
+![Demo 3](../images/prelim_sketches/Ayuho/Q3.gif)
+
+**Design Goal:**
+
+This visualization explores how hosts with different numbers of listings set their prices and how this affects guest satisfaction ratings. It helps users see if smaller hosts set higher prices and achieve better ratings compared to large hosts, who might use lower prices to attract more bookings. Users can filter by guest ratings using sliders and highlight specific host groups using the interactive legend.
+
+**Marks:**
+
+Bars (Bar chart), Areas (Density plot)
+
+**Channels:**
+
+X-Position (Number of Listings, Guest Ratings), Y-Position (Average Price, Density), Colour Hue (Listing Count Category), Opacity
+
+**Characteristics of Channels that were exploited:**
+
+Position clearly shows the relationship between average price, guest ratings, and host size. Colour effectively separates host categories, and opacity helps highlight selected categories for easier comparison.
+
+**Describe the interaction:**
+
+Two sliders let users choose guest rating ranges, filtering the bar chart. The interactive legend allows users to highlight specific host categories on both charts at once, creating an easy comparison.
+
+**Critique the view:**
+
+This visualization clearly follows the expressiveness and effectiveness principles. Position and colour effectively show important information, such as how average price changes with guest ratings and host size. The interactive sliders help users explore data based on guest ratings, while the bidirectional legend selection makes comparing different host categories easy. However, it might be unclear that the sliders only affect the bar chart, not the density plot, so adding a label could help. 
