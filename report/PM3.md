@@ -139,3 +139,46 @@ A dropdown menu lets users switch between different rating types (e.g., overall 
 **Critique the view:**  
 The visualization effectively summarizes complex relationships in a compact and interactive format. The heatmap provides an overview of correlations, while the linked bar chart allows for a deeper exploration of specific features. However, since correlation does not imply causation, some relationships may be misleading. Adding tooltips or explanatory text could help users interpret the data more accurately.
 
+#### **2. What is the relationship between guest satisfaction ratings and the price of listings for different room types?**
+
+![Demo 2](../images/prelim_sketches/Carol/scatterplot.gif)
+
+**Design Goal:**  
+This visualization examines the relationship between listing prices and guest satisfaction ratings across different room types. It helps users identify trends, such as whether higher-rated listings tend to be more expensive, and provides a clearer picture of the price distribution.
+
+**Marks:**  
+Circles (Scatter Plot), Bars (Histogram)
+
+**Channels:**  
+X-Position (Rating Score), Y-Position (Price), Color Hue (Room Type), Height (Listing Count in Histogram), Opacity
+
+**Characteristics of Channels that were exploited:**  
+Position effectively maps guest ratings against price, allowing users to see trends in how price impacts satisfaction. Colour differentiates room types, while opacity highlights selected categories. In the histogram, bar height represents the number of listings at different price points.
+
+**Describe the interaction:**  
+A price range slider filters both charts, helping users focus on specific price points. The interactive legend allows users to highlight particular room types, dimming the others for better visibility. 
+
+**Critique the view:**  
+The visualization highlights how price and ratings are connected while offering flexibility through interactive filters. However, the scatter plot can become cluttered in certain price ranges, making patterns harder to distinguish. Adding density contours or a smoothing technique could help clarify overlapping points.
+
+#### **3. Which amenities are most frequently associated with higher guest ratings in Airbnb listings?**
+
+![Demo 3](../images/prelim_sketches/Carol/dotplot.gif)
+
+**Design Goal:**  
+This visualization explores which amenities are most frequently linked to higher guest satisfaction in Airbnb listings. It allows users to compare correlations for all listings and highly-rated listings (ratings > 4.5) to see which amenities matter most.
+
+**Marks:**  
+Circles (Dot Plot), Text (Amenity List)
+
+**Channels:**  
+X-Position (Correlation Strength), Y-Position (Amenity), Color Hue (Listing Type), Opacity
+
+**Characteristics of Channels that were exploited:**  
+The position of each dot represents the correlation strength for each amenity. Colour differentiates between all listings and highly-rated listings, while opacity helps highlight selected amenities. The interactive text list also makes it easy to choose specific amenities.
+
+**Describe the interaction:**  
+A radio button lets users switch between all listings and highly-rated listings. Clicking an amenity in the list highlights its corresponding dot in the plot, and selecting a dot in the plot also highlights the corresponding text in the list, providing bidirectional linking. 
+
+**Critique the view:**  
+The visualization effectively highlights which amenities are associated with better guest ratings. However, since correlation does not imply causation, some amenities may appear important even if they don’t directly influence guest satisfaction. Additional analysis could help clarify whether these relationships are meaningful.
