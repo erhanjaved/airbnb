@@ -1,7 +1,7 @@
 # Project Milestone 3
 ## Group AECA - Airbnb in NYC: Market Trends & Impact
 
-### Erhan
+### Erhan: Pricing & Affordability Trends
 
 #### **1. How does room type impact price variations?**
 
