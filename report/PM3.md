@@ -7,115 +7,110 @@
 
 ![Demo 1](../images/prelim_sketches/Erhan/q1.gif)
 
-#### Design Goal:
+**Design Goal:**  
 This visualization was designed to explore how room types differ in pricing across New York and how these patterns vary by region. It aims to help users understand both the range and frequency of prices for each room type.
 
-#### Visualization Approach:
-We used a boxplot to show the distribution of prices for each room type, enhanced with an interactive custom legend. A histogram dynamically updates based on the selected room type, showing the full distribution of prices for that category.
+**Marks:**  
+Box (Boxplot), Bar (Histogram), Point (Legend)
 
-#### Interactivity:
-- A price slider filters listings to allow budget-focused exploration.
-- A neighborhood dropdown filters data to specific boroughs or shows all at once.
-- An interactive legend lets users click a room type to highlight it and grey out the others.
-- A linked histogram updates in real time to reflect the room type selection, price filter, and neighborhood context.
+**Channels:**  
+X-Position (Room Type), Y-Position (Price), Color Hue (Room Type), Opacity
 
-#### Visualization Principles Applied:
-- Marks: Box (boxplot), Bar (histogram), Point (legend)
-- Channels: Position (for price and room type), Color (room type), Opacity (selection feedback)
-- Channel Characteristics: Color effectively encodes nominal room types; position encodes price accurately; opacity is used to emphasize selection.
+**Characteristics of Channels that were exploited:**  
+Position channels effectively encode categorical and quantitative variables—room types and prices, respectively. Color is used to distinguish room types, while opacity changes dynamically to draw focus to the selected type. The use of coordinated channels across the boxplot and histogram helps maintain cognitive continuity during interaction.
 
-#### Critique:
-The combination of multi-view coordination and filtering provides a strong exploratory tool. The interactive legend improves usability over a static one, and the histogram adds valuable detail beyond summary statistics. A small limitation is that the custom legend might not be immediately perceived as clickable. Including tooltips in the histogram could enhance usability further.
+**Describe the interaction:**  
+A price slider filters all views to focus on listings within a desired budget. A neighborhood dropdown allows users to isolate specific boroughs or compare all regions simultaneously. The custom interactive legend allows users to click a room type to highlight it while dimming the others. A linked histogram updates in real time based on room type selection and applied filters.
+
+**Critique the view:**  
+The visualization effectively combines summary statistics and full distributions through coordinated views. The interactive legend enhances user control and clarity. However, the legend may not be immediately perceived as clickable. Adding a default histogram view (when no room type is selected) or tooltip enhancements could further improve usability.
+
 
 ### **2. What is the effect of location (neighborhood group, latitude, and longitude) on price differences?**
 
 ![Demo 2](../images/prelim_sketches/Erhan/q2.gif)
 
-#### Design Goal:
-This view was designed to show how price varies by geography, helping users identify regional trends and compare neighborhoods spatially and statistically.
+**Design Goal:**  
+This visualization was created to examine how Airbnb listing prices vary across NYC boroughs. It aims to help users identify regional pricing trends and make comparisons between neighborhoods through both spatial and statistical perspectives.
 
-#### Visualization Approach:
-A map of NYC listings was layered over real geographic boundaries. A bar chart shows the average price by borough. Both views are bidirectionally linked to provide a spatial and statistical lens into pricing.
+**Marks:**  
+Circle (Map), Bar (Borough Chart)
 
-#### Interactivity:
-- A price slider filters listings on both the map and the bar chart.
-- Users can click a borough in either the map or the chart to highlight it in both views.
-- Bi-directional linking ensures greyed-out context for unselected regions while focusing the view.
+**Channels:**  
+Longitude/Latitude Position, Categorical X-Position, Color Hue, Size (Fixed)
 
-#### Visualization Principles Applied:
-- **Marks**: Circle (map), Bar (borough chart)
-- **Channels**: Position (longitude/latitude, borough), Color (price), Size (fixed)
-- **Channel Characteristics**: Spatial position reflects real geography; color conveys price; interaction highlights comparisons.
+**Characteristics of Channels that were exploited:**  
+Color hue encoded price magnitude, allowing viewers to quickly identify higher and lower-priced areas. Geospatial positioning on the map reflected actual location, while x-position on the bar chart enabled categorical borough comparison. Color consistency across both views reinforced linking and aided interpretability.
 
-#### Critique:
-The map and bar chart are well-coordinated, making exploration intuitive. The linked views encourage comparison and discovery. However, in high-density areas, overlapping points may obscure listings — clustering or aggregation could improve clarity.
+**Describe the interaction:**  
+When a borough is selected through clicking either the map or bar chart, it is highlighted across both views. Unselected areas are greyed out for context. A price slider further filters the listings displayed in both charts. This bi-directional interaction facilitates flexible, intuitive exploration from both geographic and quantitative entry points.
+
+**Critique the view:**  
+The map and bar chart function well together to support multi-angle comparison. The interactivity enhances usability and promotes deeper insight. However, listings in dense urban areas may visually overlap on the map, reducing clarity. Future iterations could incorporate aggregation techniques like hexbinning or spatial clustering to address this.
+
 
 ### **3. Does the host's listing count or years of hosting (host_since) influence listing prices?**
 
 ![Demo 3](../images/prelim_sketches/Erhan/q3.gif)
 
-#### Design Goal:
-This visualization was designed to evaluate whether host experience or scale impacts Airbnb listing prices.
+**Design Goal:**  
+This visualization was designed to assess whether host experience and the number of listings a host manages influence Airbnb pricing. It supports exploration of how scale and tenure correlate with average price levels.
 
-#### Visualization Approach:
-A heatmap encodes average price based on host listing count and hosting experience. Users can adjust parameters to view different aggregations of price (mean, median, or max) and focus on hosts with a specific number of listings.
+**Marks:**  
+Rect
 
-#### Interactivity:
-- A price slider filters out high-end outliers.
-- A host listing count slider allows focusing on individuals or commercial-scale hosts.
-- A radio button allows switching between mean, median, or maximum prices.
+**Channels:**  
+X-Position (Hosting Duration), Y-Position (Number of Listings), Color Hue
 
-#### Visualization Principles Applied:
-- **Marks**: Rect
-- **Channels**: Position (binned host experience and listing count), Color (aggregated price)
-- **Channel Characteristics**: Color gradient reflects pricing differences; position allows multidimensional correlation.
+**Characteristics of Channels that were exploited:**  
+Binned position channels were used to compare categories of host tenure and scale. Color hue encoded average price and highlighted pricing gradients across the 2D matrix. The combination of positional and color encoding enabled multi-dimensional comparisons in a compact format.
 
-#### Critique:
-This chart is effective at showing large-scale patterns across host attributes. The color encoding supports rapid pattern detection. However, binning can flatten nuanced relationships, and adding tooltips or raw scatterplots could support deeper exploration.
+**Describe the interaction:**  
+A price slider removes outliers, allowing a cleaner focus on typical pricing. A second slider restricts the number of listings to isolate small vs. large-scale hosts. A radio selection allows toggling between mean, median, or maximum pricing as the aggregation metric. These interactions provide analytical flexibility and support hypothesis-driven exploration.
+
+**Critique the view:**  
+The heatmap reveals general trends effectively and supports comparative analysis of host characteristics. The flexibility in aggregation is a strength. However, binning may obscure edge patterns or variability within each cell. Supplementing the heatmap with a scatterplot or tooltips could enhance interpretability.
 
 ### **4. How do reviews per month, review scores, and the total number of reviews correlate with pricing?**
 
 ![Demo 4](../images/prelim_sketches/Erhan/q4.gif)
 
-#### Design Goal:
-The goal here was to investigate whether review frequency and rating scores influence pricing trends across listings.
+**Design Goal:**  
+This visualization was designed to explore whether review frequency and rating scores influence listing prices. It aims to uncover patterns that connect guest feedback metrics with pricing behavior on Airbnb.
 
-#### Visualization Approach:
-A heatmap shows average price across binned review scores and reviews per month. Zooming and filtering allow users to explore patterns in trusted, frequently-reviewed listings.
+**Marks:**  
+Rect
 
-#### Interactivity:
-- A price slider filters out high-priced listings.
-- A review count slider removes listings with minimal review data.
-- Users can zoom and pan on the x-axis (reviews per month) for deeper inspection.
-- Tooltips provide precise data for each bin.
+**Channels:**  
+X-Position (Reviews per Month), Y-Position (Review Scores), Color Hue
 
-#### Visualization Principles Applied:
-- **Marks**: Rect
-- **Channels**: Position (review score and frequency), Color (price)
-- **Channel Characteristics**: Binning simplifies input space; color gradient allows comparison; tooltips aid in interpretation.
+**Characteristics of Channels that were exploited:**  
+Binning was used to group continuous variables into digestible segments. Color hue encoded average price and revealed pricing trends across review frequency and score combinations. Position channels helped distinguish the relationship between guest activity and listing valuation.
 
-#### Critique:
-The heatmap offers powerful pattern recognition, showing how price aligns with user feedback. However, the binning might obscure edge cases or small clusters. Additional views like scatterplots or density curves could complement this analysis.
+**Describe the interaction:**  
+A price slider filters out expensive listings to focus on the general market. A review count slider removes low-signal listings. Users can pan and zoom along the reviews-per-month axis to inspect specific frequency ranges. Tooltips display exact values for detailed comparisons, supporting deeper investigation of each bin.
+
+**Critique the view:**  
+The heatmap effectively reveals how review behavior correlates with pricing. It’s especially strong in identifying sweet spots for high-rated, frequently-reviewed listings. However, some nuance is lost due to binning, and the view may underrepresent outliers or sparse bins. Supplementing with density plots or scatter overlays could address this limitation.
 
 ### **5. What role does availability over 365 days and minimum nights play in pricing strategies?**
 
 ![Demo 5](../images/prelim_sketches/Erhan/q5.gif)
 
-#### Design Goal:
-This visualization was designed to reveal how minimum night requirements and availability influence pricing, particularly across different room types.
+**Design Goal:**  
+This visualization was created to examine how pricing is influenced by listing availability and minimum night requirements, particularly across different room types. It aims to uncover distribution patterns that emerge under different booking constraints.
 
-#### Visualization Approach:
-Violin plots (constructed with `mark_area`) display the full distribution of prices across grouped minimum night ranges. The chart is faceted by room type and includes filters for price and room type.
+**Marks:**  
+Area
 
-#### Interactivity:
-- A price slider allows users to focus on listings within a target range.
-- A room type dropdown enables room-specific comparison or viewing all room types.
-- The layout uses faceting and x-offset to clearly separate minimum night bins.
+**Channels:**  
+Y-Position (Price), X-Offset / Column (Minimum Night Groups), Color Hue (Minimum Night Group)
 
-#### Visualization Principles Applied:
-- **Marks**: Area (for violin plot)
-- **Channels**: Position (price), Color (minimum night group), X-offset / Column (categorical faceting)
-- **Channel Characteristics**: Area shape shows distribution density; position preserves detail; color distinguishes duration categories.
+**Characteristics of Channels that were exploited:**  
+The area mark represents the density of prices within each minimum night group. Position encodes the distribution along the price axis, preserving variation and skew. Color distinguishes between minimum night categories, aiding comparison across bins. Faceting by room type introduces a third dimension, enabling segmented analysis.
 
-#### Critique:
-The violin plots effectively communicate distribution spread and skewness, especially when faceted by room type. The custom binning of minimum nights helps interpret common booking behaviors. However, `mark_area` violins are less conventional, and adding a median line or sample size could help interpretation.
+**Describe the interaction:**  
+A price slider filters out high-end listings to narrow the focus. A room type dropdown allows users to isolate specific room categories or view all simultaneously. Faceting separates room types into comparable columns, while x-offset organizes minimum night bins in a logical sequence.
+
+**Critique the view:**  
+The violin plots communicate pricing spread and shape effectively, particularly for identifying skew and variance. The layout supports comparison within and across room types. However, violin plots using `mark_area` may be unfamiliar to some viewers. Including median markers or frequency annotations could improve interpretability.
