@@ -1,5 +1,7 @@
 # Group AECA - "Airbnb in NYC: Market Trends & Impact"
 
+### Watch our final presentation  [here](https://vimeo.com/1073422121/931c1aa4ac?share=copy) :D
+
 ## Description
 <p align="center">
     <img src="images/intro.png" width="300px">
