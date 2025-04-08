@@ -20,7 +20,7 @@ Our intended audience includes Airbnb hosts and short-term rental operators. By 
 
 ## Team Members
 
-- Erhan: I'm a 4th Year Mathematics & Data Science student at UBC Vancouver, and a pro tennis player on the side :D
+- Erhan: I'm a 4th Year Mathematics & Data Science student at UBC, and a pro tennis player on the side :D
 - Carol: I'm a 5th Year Commerce & Data Science student and I have been on exchange twice to Copenhagen and Shenzhen!
 - Aaron: I'm a 3rd Year Computer Science student and I love to cook!
 - Ayuho: I'm a 5th Year Psych & Data Science student from Japan and I love animals!
@@ -33,6 +33,12 @@ Our intended audience includes Airbnb hosts and short-term rental operators. By 
 
 <img src ="images/test.jpg" width="300px">
 -->
+<p align="left">
+    <img src="images/viz1.png" width="450">
+    <img src="images/viz2.png" width="500">
+    <img src="images/viz3.png" width="500">
+    <img src="images/viz4.png" width="500">
+</p>
 
 ## Package requirements
 
